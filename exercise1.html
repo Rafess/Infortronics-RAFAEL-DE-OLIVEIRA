@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Home</a>
+          <div class="dropdown col-12">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
+              Exercícios
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+              <li><a class="dropdown-item" href="./exercise1.html">Exercício 1 e 2</a></li>
+              <li><a class="dropdown-item" href="./exercise3.html">Exercício 3</a></li>
+              <li><a class="dropdown-item" href="./exercise4.html">Exercício 4</a></li>
+              <li><a class="dropdown-item" href="./exercise5.html">Exercício 5</a></li>
+              <li><a class="dropdown-item" href="./exercise6.html">Exercício 6</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container-md">
+        <p> 1. Crie uma aplicação que permita a digitação de números e mostre esses
+            números em tela de forma ordenada.</p>
+            <br>
+        <div class="container-md border rounded mb-5">
+            <form method="POST" class="row g-3" action="./back-end/numberController.cs">
+                <div class="col-md-6">
+                    <label for="numbers" class="form-label pt-3">   
+                        Insira os números desejados, separe-os utilizando um espaço.
+                    </label>
+                    <input id="numbers" name="numbers" type="text" class="form-control" placeholder="Digite números">
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary sort-number" onclick="sortNumbers()">Ordenar</button>
+                    <button type="submit" disabled class="btn btn-primary save-file" onclick="saveToFile()">Salvar em arquivo</button>
+                </div>
+            </form>
+            <div class="row md-6 div-display pt-3">
+                <div class="col-md-6">
+                    <p class="lead sorted-numbers"></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="./front-end/assets/scpript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
